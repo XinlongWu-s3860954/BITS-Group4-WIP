@@ -13,12 +13,9 @@ import {
   DiscordRequest,
 } from "./utils.js";
 import { getShuffledOptions, getResult } from "./game.js";
-import {
-  TEST_COMMAND,
-  HasGuildCommands,
-} from "./commands.js";
+import { TEST_COMMAND, HasGuildCommands } from "./commands.js";
 
-import {GIT_COMMAND} from "./commands/git.js"
+import { GIT_COMMAND } from "./commands/git.js";
 
 // Create an express app
 const app = express();
@@ -27,8 +24,7 @@ const PORT = process.env.PORT || 3000;
 // Parse request body and verifies incoming requests using discord-interactions package
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
-// Store for in-progress games. In production, you'd want to use a DB
-const activeGames = {};
+const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND];
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests
@@ -50,19 +46,15 @@ app.post("/interactions", async function (req, res) {
    */
   if (type === InteractionType.APPLICATION_COMMAND) {
     const { name } = data;
-
-    // "test" guild command
-    if (name === "test") {
-      // Send a message into the channel where command was triggered from
-      return res.send({
-        type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-        data: {
-          // Fetches a random emoji to send from a helper function
-          content: "hello world " + getRandomEmoji(),
-        },
-      });
-    }
-    else (name)
+    
+    console.log(name)
+    
+    COMMANDS_LIST.forEach((command)=>{
+      console.log(" === "+command.name+" :")
+      if(name === command.name){
+        command.handler(res,req,data);
+      }
+    })
   }
 });
 
@@ -70,8 +62,5 @@ app.listen(PORT, () => {
   console.log("Listening on port", PORT);
 
   // Check if guild commands from commands.json are installed (if not, install them)
-  HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, [
-    TEST_COMMAND,
-    GIT_COMMAND
-  ]);
+  HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
 });
