@@ -10,12 +10,6 @@ export async function HasGuildCommands(appId, guildId, commands) {
   commands.forEach((c) => HasGuildCommand(appId, guildId, c));
 }
 
-export async function ClearGuildCommands(appId, guildId, commands) {
-  if (guildId === "" || appId === "") return;
-
-  commands.forEach((c) => RemoveGuildCommand(appId, guildId, c));
-}
-
 // Checks for a command
 async function HasGuildCommand(appId, guildId, command) {
   // API endpoint to get and post guild commands
@@ -53,12 +47,13 @@ export async function InstallGuildCommand(appId, guildId, command) {
 }
 
 // remove a command
-export async function RemoveGuildCommand(appId, guildId, command) {
+export async function RemoveGuildCommand(appId, guildId, commId) {
   // API endpoint to get and post guild commands
-  const endpoint = `applications/${appId}/guilds/${guildId}/commands`;
+  const endpoint = `applications/${appId}/guilds/${guildId}/commands/${commId}`;
   // remove command
   try {
-    await DiscordRequest(endpoint, { method: "Delete", body: command });
+    let res = await DiscordRequest(endpoint, { method: "Delete"});
+    console.log(res)
   } catch (err) {
     console.error(err);
   }
