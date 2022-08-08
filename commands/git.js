@@ -1,10 +1,20 @@
+import {
+  InteractionResponseType
+} from "discord-interactions";
+
 function gitHandler(res,req,data){
-  res.send("Git command")
+  console.log(data)
+  res.send({
+      type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+      data: {
+        content: "GIT you have send msg: "
+      },
+    })
 }
 
 // Simple git command
 export const GIT_COMMAND = {
-  name: 'git',
+  name: "git",
   description: 'Git command Q&A bot',
   type: 1,
   handler: gitHandler

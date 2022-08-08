@@ -47,10 +47,9 @@ app.post("/interactions", async function (req, res) {
   if (type === InteractionType.APPLICATION_COMMAND) {
     const { name } = data;
     
-    console.log(name)
-    
     COMMANDS_LIST.forEach((command)=>{
-      console.log(" === "+command.name+" :")
+      console.log(name + " === "+command.name+" :")
+      console.log(name === command.name)
       if(name === command.name){
         command.handler(res,req,data);
       }
