@@ -15,7 +15,7 @@ import {
 import { getShuffledOptions, getResult } from "./game.js";
 import { TEST_COMMAND, HasGuildCommands } from "./commands.js";
 
-import { GIT_COMMAND } from "./commands/QA.js";
+import { GIT_COMMAND } from "./commands/git.js";
 
 // Create an express app
 const app = express();
@@ -53,47 +53,6 @@ app.post("/interactions", async function (req, res) {
         command.handler(res,req,data);
       }
     })
-  }
-  
-  if (type === InteractionType.MESSAGE_COMPONENT) {
-    // custom_id set in payload when sending message component
-    const componentId = data.custom_id;
-    console.log(componentId)
-
-    if (componentId.startsWith('accept_button_')) {
-      // get the associated game ID
-      const gameId = componentId.replace('accept_button_', '');
-      // Delete message with token in request body
-      const endpoint = `webhooks/${process.env.APP_ID}/${req.body.token}/messages/${req.body.message.id}`;
-      try {
-        await res.send({
-          type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-          data: {
-            // Fetches a random emoji to send from a helper function
-            content: 'What is your object of choice?',
-            // Indicates it'll be an ephemeral message
-            flags: InteractionResponseFlags.EPHEMERAL,
-            components: [
-              {
-                type: MessageComponentTypes.ACTION_ROW,
-                components: [
-                  {
-                    type: MessageComponentTypes.STRING_SELECT,
-                    // Append game ID
-                    custom_id: `select_choice_${gameId}`,
-                    options: getShuffledOptions(),
-                  },
-                ],
-              },
-            ],
-          },
-        });
-        // Delete previous message
-        await DiscordRequest(endpoint, { method: 'DELETE' });
-      } catch (err) {
-        console.error('Error sending message:', err);
-      }
-    }
   }
 });
 
