@@ -175,10 +175,6 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
-app.post('/', (req, res) => {
-  res.send({"type": 1})
-})
-
 app.listen(PORT, () => {
   console.log('Listening on port', PORT);
 
