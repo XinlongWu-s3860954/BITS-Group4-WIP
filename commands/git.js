@@ -1,7 +1,7 @@
 import { InteractionResponseType } from "discord-interactions";
 
 function gitHandler(res, req, data) {
-  if (data.options.length === 0) {
+  if (!data.options) {
     res.send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
