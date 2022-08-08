@@ -13,7 +13,7 @@ import {
   DiscordRequest,
 } from "./utils.js";
 import { getShuffledOptions, getResult } from "./game.js";
-import { TEST_COMMAND, HasGuildCommands } from "./commands.js";
+import { TEST_COMMAND, HasGuildCommands, ClearGuildCommands } from "./commands.js";
 
 import { GIT_COMMAND } from "./commands/git.js";
 
@@ -50,7 +50,7 @@ app.post("/interactions", async function (req, res) {
     
     COMMANDS_LIST.forEach((command)=>{
       if(name === command.name){
-        command.handler(res,req,data);
+        // command.handler(res,req,data);
       }
     })
   }
@@ -60,5 +60,6 @@ app.listen(PORT, () => {
   console.log("Listening on port", PORT);
 
   // Check if guild commands from commands.json are installed (if not, install them)
-  HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
+  // HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
+  ClearGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
 });
