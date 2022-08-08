@@ -15,7 +15,7 @@ import {
 import { getShuffledOptions, getResult } from "./game.js";
 import { TEST_COMMAND, HasGuildCommands } from "./commands.js";
 
-import { GIT_COMMAND } from "./commands/git.js";
+import { GIT_COMMAND } from "./commands/QA.js";
 
 // Create an express app
 const app = express();
@@ -32,6 +32,7 @@ const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND];
 app.post("/interactions", async function (req, res) {
   // Interaction type and data
   const { type, id, data } = req.body;
+  console.log(req.body)
 
   /**
    * Handle verification requests
@@ -48,8 +49,6 @@ app.post("/interactions", async function (req, res) {
     const { name } = data;
     
     COMMANDS_LIST.forEach((command)=>{
-      console.log(name + " === "+command.name+" :")
-      console.log(name === command.name)
       if(name === command.name){
         command.handler(res,req,data);
       }
