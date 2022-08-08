@@ -1,12 +1,14 @@
 {
+  "engines": {
+    "node": "16.x"
+  },
   "name": "getting-started",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "Shay DeWael",
   "license": "MIT",
