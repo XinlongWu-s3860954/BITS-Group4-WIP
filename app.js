@@ -175,6 +175,10 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
+app.get('/', (req, res) => {
+  return "Hello"
+})
+
 app.listen(PORT, () => {
   console.log('Listening on port', PORT);
 
