@@ -59,6 +59,19 @@ export async function RemoveGuildCommand(appId, guildId, commId) {
   }
 }
 
+// remove a command
+export async function UpdateGuildCommand(appId, guildId, commId, command) {
+  // API endpoint to get and post guild commands
+  const endpoint = `applications/${appId}/guilds/${guildId}/commands/${commId}`;
+  // remove command
+  try {
+    let res = await DiscordRequest(endpoint, { method: "PATCH", body: command });
+    console.log(command['name']+" have been Updated")
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 // Get the game choices from game.js
 function createCommandChoices() {
   const choices = getRPSChoices();
