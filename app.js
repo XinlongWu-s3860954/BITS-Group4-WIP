@@ -175,8 +175,8 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
-app.get('/', (req, res) => {
-  return "Hello"
+app.post('/', (req, res) => {
+  res.send({"type": 1})
 })
 
 app.listen(PORT, () => {

@@ -9,6 +9,8 @@ export function VerifyDiscordRequest(clientKey) {
 
     const isValidRequest = verifyKey(buf, signature, timestamp, clientKey);
     if (!isValidRequest) {
+      console.log(clientKey)
+      console.log(signature)
       res.status(401).send('Bad request signature');
       throw new Error('Bad request signature');
     }
