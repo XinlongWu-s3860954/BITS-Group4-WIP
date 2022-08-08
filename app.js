@@ -32,7 +32,6 @@ const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND];
 app.post("/interactions", async function (req, res) {
   // Interaction type and data
   const { type, id, data } = req.body;
-  console.log(req.body)
 
   /**
    * Handle verification requests
@@ -50,7 +49,7 @@ app.post("/interactions", async function (req, res) {
     
     COMMANDS_LIST.forEach((command)=>{
       if(name === command.name){
-        // command.handler(res,req,data);
+        command.handler(res,req,data);
       }
     })
   }
@@ -60,6 +59,6 @@ app.listen(PORT, () => {
   console.log("Listening on port", PORT);
 
   // Check if guild commands from commands.json are installed (if not, install them)
-  // HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
-  RemoveGuildCommand(process.env.APP_ID, process.env.GUILD_ID, '1006038614091780246')
+  HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, COMMANDS_LIST);
+  // RemoveGuildCommand(process.env.APP_ID, process.env.GUILD_ID, '1006038614234374256')
 });

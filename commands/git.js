@@ -2,10 +2,12 @@ import { InteractionResponseType } from "discord-interactions";
 
 function gitHandler(res, req, data) {
   console.log(data);
+  let msg = data.option
+  console.log(data)
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: "GIT you have send msg: ",
+      content: "GIT you have send msg: "+msg,
     },
   });
 }

@@ -53,7 +53,7 @@ export async function RemoveGuildCommand(appId, guildId, commId) {
   // remove command
   try {
     let res = await DiscordRequest(endpoint, { method: "Delete"});
-    console.log(res)
+    console.log(res.status)
   } catch (err) {
     console.error(err);
   }
