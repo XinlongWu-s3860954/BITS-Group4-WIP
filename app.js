@@ -13,10 +13,15 @@ import {
   DiscordRequest,
 } from "./utils.js";
 import { getShuffledOptions, getResult } from "./game.js";
-import { TEST_COMMAND, HasGuildCommands, RemoveGuildCommand, UpdateGuildCommand } from "./commands.js";
+import {
+  TEST_COMMAND,
+  HasGuildCommands,
+  RemoveGuildCommand,
+  UpdateGuildCommand,
+} from "./commands.js";
 
 import { GIT_COMMAND } from "./commands/git.js";
-import extractor from "./test/extraction.js"
+import extractor from "./test/extraction.js";
 
 // Create an express app
 const app = express();
@@ -27,7 +32,7 @@ app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
 const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND];
 
-app.get('/extractor')
+app.get("/extractor", extractor);
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests
@@ -49,12 +54,12 @@ app.post("/interactions", async function (req, res) {
    */
   if (type === InteractionType.APPLICATION_COMMAND) {
     const { name } = data;
-    
-    COMMANDS_LIST.forEach((command)=>{
-      if(name === command.name){
-        command.handler(res,req,data);
+
+    COMMANDS_LIST.forEach((command) => {
+      if (name === command.name) {
+        command.handler(res, req, data);
       }
-    })
+    });
   }
 });
 
