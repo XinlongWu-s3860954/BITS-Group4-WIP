@@ -23,4 +23,5 @@
           "8. Click Add SSH key."]
   link: "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
           
-- key_words: ["github"]
+- key_words: ["github", "what is github"]
+  answer: []
