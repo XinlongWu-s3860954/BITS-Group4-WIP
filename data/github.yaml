@@ -47,5 +47,5 @@
   answer: ["How to setup git?",
            "1) Download and install the latest version of Git at https://git-scm.com/downloads",
            "2) Set your username in Git.",
-           "3) Set your commit email address in Git.",
-           ]
+           "3) Set your commit email address in Git."]
+    link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
