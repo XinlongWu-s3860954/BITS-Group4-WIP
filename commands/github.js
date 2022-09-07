@@ -10,9 +10,20 @@ function findAnswer(key_words){
   let max_hit_count = 0;
   
   github_data.forEach((element) => {
-      let hit_count = 0;
-      key
+    let hit_count = 0;
+    // compare the key_words with the element
+    element.key_words.forEach((value) => {
+        if(key_words.includes(value)){
+            hit_count++;
+        }
+    });
+    if(hit_count > max_hit_count){
+        max_hit_count = hit_count;
+        ans = element;
+    }
   });
+  
+  return ans;
 }
 
 function githubHandler(res, req, data) {
@@ -31,7 +42,7 @@ function githubHandler(res, req, data) {
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: "key_words: " + key_words,
+      content: findAnswer(,
     },
   });
 }

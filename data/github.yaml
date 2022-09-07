@@ -1,8 +1,8 @@
-- key_word: ["disable user","login screen","user login","back"]
+- key_words: ["disable user","login screen","user login","back"]
   answer: "Answer of Question"
   link: "www.google.com"
 
-- key_word: ["user authentication","user chooses","guest user",
+- key_words: ["user authentication","user chooses","guest user",
             "authentication","configure","passport","ignore","continue"]
   answer: "Answer of Question"
   link: "www.google.com"
