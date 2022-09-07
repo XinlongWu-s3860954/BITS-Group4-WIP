@@ -6,3 +6,7 @@
             "authentication","configure","passport","ignore","continue"]
   answer: "Answer of Question"
   link: "www.google.com"
+  
+- key_words: ["con'","login","github"]
+  answer: "cuz it is shut down"
+  link: "www.google.com"

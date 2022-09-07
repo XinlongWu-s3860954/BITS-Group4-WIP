@@ -23,6 +23,10 @@ function findAnswer(key_words){
     }
   });
   
+  if (Object.keys(ans).length === 0) {
+    return "Sorry, I can't help you now ;("; 
+  }
+  
   return ans;
 }
 
@@ -42,7 +46,7 @@ function githubHandler(res, req, data) {
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: findAnswer(,
+      content: stringify(findAnswer(key_words)),
     },
   });
 }
