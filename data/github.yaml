@@ -34,5 +34,18 @@
            "Follow the prompts to complete the installation."]
   link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop"
   
-- key_words: ["setup github", "setup git", "how to setup github"]
-  answer: ["To get started with GitHub, you'll need to create  "]
+- key_words: ["setup github", "github helloworld", "how to setup github"]
+  answer: ["To get started with GitHub, you will need a GitHub account and need to know:",
+           "1) How to create and use repositories",
+           "2) Start and make a new branch",
+           "3) Make changes to a file and push them to GitHub as commits",
+           "4) Open and merge a pull request",
+           "Follow the documentation in the link provided to get started and create your own HelloWorld repository!"]
+    link: "https://docs.github.com/en/get-started/quickstart/hello-world"
+    
+- key_words: ["setup git", "git setup", "how to setup git"]
+  answer: ["How to setup git?",
+           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
+           "2) Set your username in Git.",
+           "3) Set your commit email address in Git.",
+           ]
