@@ -5,6 +5,20 @@ import { parse, stringify } from 'yaml'
 
 var github_data = parse(fs.readFileSync('./data/github.yaml', 'utf8'))
 
+function toString(array){
+  let res = null;
+  array.forEach((str) => {
+    if (res == null){
+      res = str;
+    }
+    else{
+      res += '\n'+str
+    }
+  });
+  
+  return res;
+}
+
 function findAnswer(key_words){
   let ans = {};
   let max_hit_count = 0;
@@ -36,7 +50,7 @@ function githubHandler(res, req, data) {
     res.send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: "Sorry, Did you say \n anything?",
+        content: "Sorry, Did you say anything?",
       },
     });
     return
@@ -48,7 +62,7 @@ function githubHandler(res, req, data) {
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: ans == null ? "Sorry, I can't help you now ;(" : ans.answer,
+      content: ans == null ? "Sorry, I can't help you now ;(" : toString(ans.answer) + " \n For more information, see:" + ans.link,
     },
   });
 }

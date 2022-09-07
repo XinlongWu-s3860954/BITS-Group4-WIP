@@ -1,25 +1,25 @@
 - key_words: ["disable user","login screen","user login","back"]
-  answer: "Answer of Question"
+  answer: ["Answer of Question"]
   link: "www.google.com"
 
 - key_words: ["user authentication","user chooses","guest user",
             "authentication","configure","passport","ignore","continue"]
-  answer: "Answer of Question"
+  answer: ["Answer of Question"]
   link: "www.google.com"
   
 - key_words: ["con'","login","github"]
-  answer: "cuz it is shut down"
+  answer: ["cuz it is shut down"]
   link: "www.google.com"
   
 # how can I set up SSH key passphrases
 - key_words: ["SSH key passphrases","set","ssh key passphrases"]
-  answer: '1. Copy the SSH public key to your clipboard. \\n
-          2. In the upper-right corner of any page, click your profile photo, then click Settings.\n
-          3. In the "Access" section of the sidebar, click  SSH and GPG keys.\n
-          4. Click New SSH key or Add SSH key.\n
-          5. In the "Title" field, add a descriptive label for the new key. For example, if you are using a personal laptop, you might call this key "Personal laptop".\n
-          6. Select the type of key, either authentication or signing \n
-          7. Paste your key into the "Key" field. \n
-          8. Click Add SSH key.'
+  answer: ["1. Copy the SSH public key to your clipboard.",
+          "2. In the upper-right corner of any page, click your profile photo, then click Settings.",
+          "3. In the \"Access\" section of the sidebar, click  SSH and GPG keys.",
+          "4. Click New SSH key or Add SSH key.",
+          "5. In the \"Title\" field, add a descriptive label for the new key. For example, if you are using a personal laptop, you might call this key \"Personal laptop\".",
+          "6. Select the type of key, either authentication or signing",
+          "7. Paste your key into the \"Key\" field.",
+          "8. Click Add SSH key."]
   link: "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
           
