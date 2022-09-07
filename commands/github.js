@@ -15,6 +15,7 @@ function findAnswer(key_words){
     element.key_words.forEach((value) => {
         if(key_words.includes(value)){
             hit_count++;
+            console.log("hit:" + value);
         }
     });
     if(hit_count > max_hit_count){
