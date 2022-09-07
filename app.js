@@ -22,6 +22,7 @@ import {
 
 import { GIT_COMMAND } from "./commands/git.js";
 import { EXTRACTOR_COMMAND } from "./commands/extractor.js";
+import { GITHUB_COMMAND } from "./commands/github.js";
 
 // Create an express app
 const app = express();
@@ -30,7 +31,7 @@ const PORT = process.env.PORT || 3000;
 // Parse request body and verifies incoming requests using discord-interactions package
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
-const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND, EXTRACTOR_COMMAND];
+const COMMANDS_LIST = [TEST_COMMAND, GIT_COMMAND, EXTRACTOR_COMMAND,GITHUB_COMMAND];
 
 /**
  * Interactions endpoint URL where Discord will send HTTP requests
