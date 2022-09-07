@@ -49,3 +49,7 @@
 #           "2) Set your username in Git.",
 #           "3) Set your commit email address in Git."]
 #    link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+
+- key_words: ["join github","apply github","sign up for github"]
+  answer: ["Visit https://github.com/join to sign up for GitHub!"]
+  link: "NULL"
