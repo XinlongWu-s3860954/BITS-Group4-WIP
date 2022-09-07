@@ -25,7 +25,7 @@ function findAnswer(key_words){
   });
   
   if (Object.keys(ans).length === 0) {
-    return "Sorry, I can't help you now ;("; 
+    return null; 
   }
   
   return ans;
@@ -36,7 +36,7 @@ function githubHandler(res, req, data) {
     res.send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: "Sorry, Did you say anything?",
+        content: "Sorry, Did you say \n anything?",
       },
     });
     return
@@ -44,10 +44,11 @@ function githubHandler(res, req, data) {
 
   let msg = data.options[0].value;
   let key_words = rake.generate(msg);
+  let ans = findAnswer(key_words);
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: stringify(findAnswer(key_words)),
+      content: ans == null ? "Sorry, I can't help you now ;(" : ans.answer,
     },
   });
 }

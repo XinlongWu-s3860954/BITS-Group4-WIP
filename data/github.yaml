@@ -13,7 +13,7 @@
   
 # how can I set up SSH key passphrases
 - key_words: ["SSH key passphrases","set","ssh key passphrases"]
-  answer: '1. Copy the SSH public key to your clipboard. \n
+  answer: '1. Copy the SSH public key to your clipboard. \\n
           2. In the upper-right corner of any page, click your profile photo, then click Settings.\n
           3. In the "Access" section of the sidebar, click  SSH and GPG keys.\n
           4. Click New SSH key or Add SSH key.\n
