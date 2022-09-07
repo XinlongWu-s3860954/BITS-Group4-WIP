@@ -22,33 +22,34 @@
           "7. Paste your key into the \"Key\" field.",
           "8. Click Add SSH key."]
   link: "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
-          
-#- key_words: ["what is github","intro github"]
-#  answer: ["GitHub is a code hosting platform for version control and collaboration.",
-#          "It lets you and others work together on projects from anywhere.",
-#          "Check out this introductory video!"]
-#  link: "https://youtu.be/w3jLJU7DT5E"
-
-#- key_words: ["install","install github","install github desktop"]
-#  answer: ["To install GitHub Desktop, navigate to https://desktop.github.com/ and download the appropriate version of GitHub Desktop for your operating system.",
-#          "Follow the prompts to complete the installation."]
-#  link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop"
   
-#- key_words: ["setup github","github helloworld","how to setup github"]
-#  answer: ["To get started with GitHub, you will need a GitHub account and need to know:",
-#           "1) How to create and use repositories",
-#           "2) Start and make a new branch",
-#           "3) Make changes to a file and push them to GitHub as commits",
-#           "4) Open and merge a pull request",
-#           "Follow the documentation in the link provided to get started and create your own HelloWorld repository!"]
-    link: "https://docs.github.com/en/get-started/quickstart/hello-world"
+ 
+- key_words: ["what is github","intro github"]
+  answer: ["GitHub is a code hosting platform for version control and collaboration.",
+          "It lets you and others work together on projects from anywhere.",
+          "Check out this introductory video!"]
+  link: "https://youtu.be/w3jLJU7DT5E"
+
+- key_words: ["install","install github","install github desktop"]
+  answer: ["To install GitHub Desktop, navigate to https://desktop.github.com/ and download the appropriate version of GitHub Desktop for your operating system.",
+          "Follow the prompts to complete the installation."]
+  link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop"
+  
+- key_words: ["setup github","github helloworld","how to setup github"]
+  answer: ["To get started with GitHub, you will need a GitHub account and need to know:",
+           "1) How to create and use repositories",
+           "2) Start and make a new branch",
+           "3) Make changes to a file and push them to GitHub as commits",
+           "4) Open and merge a pull request",
+           "Follow the documentation in the link provided to get started and create your own HelloWorld repository!"]
+  link: "https://docs.github.com/en/get-started/quickstart/hello-world"
     
-#- key_words: ["setup git", "git setup", "how to setup git"]
-#  answer: ["How to setup git?",
-#           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
-#           "2) Set your username in Git.",
-#           "3) Set your commit email address in Git."]
-#    link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+- key_words: ["setup git", "git setup", "how to setup git"]
+  answer: ["How to setup git?",
+           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
+           "2) Set your username in Git.",
+           "3) Set your commit email address in Git."]
+  link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
 
 - key_words: ["join github","apply github","sign up for github"]
   answer: ["Visit https://github.com/join to sign up for GitHub!"]
