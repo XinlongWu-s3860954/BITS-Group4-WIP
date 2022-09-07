@@ -23,13 +23,14 @@
           "8. Click Add SSH key."]
   link: "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
           
-- key_words: ["github", "what is github"]
+- key_words: ["what is github"]
   answer: ["GitHub is a code hosting platform for version control and collaboration.",
            "It lets you and others work together on projects from anywhere.",
            "Check out this introductory video!"]
   link: "https://youtu.be/w3jLJU7DT5E"
-  
-  - key_words: ["install", "install github", "install github desktop"]
-  answer: ["You can install GitHub Desktop at https://desktop.github.com/"]
-  link: "https://desktop.github.com/"
+
+- key_words: ["install", "install github", "install github desktop"]
+  answer: ["You can install GitHub Desktop at https://desktop.github.com/",
+           "You can follow the setup guide in GitHub Docs"]
+  link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop"
   
