@@ -13,10 +13,13 @@
   
 # how can I set up SSH key passphrases
 - key_words: ["SSH key passphrases","set","ssh key passphrases"]
-  answer: "1. Copy the SSH public key to your clipboard. \n
+  answer: '1. Copy the SSH public key to your clipboard. \n
           2. In the upper-right corner of any page, click your profile photo, then click Settings.\n
           3. In the "Access" section of the sidebar, click  SSH and GPG keys.\n
           4. Click New SSH key or Add SSH key.\n
-          5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".\n
-          6. Select the type of key, either authentication or signing \n"
+          5. In the "Title" field, add a descriptive label for the new key. For example, if you are using a personal laptop, you might call this key "Personal laptop".\n
+          6. Select the type of key, either authentication or signing \n
+          7. Paste your key into the "Key" field. \n
+          8. Click Add SSH key.'
+  link: "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
           
