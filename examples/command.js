@@ -8,7 +8,6 @@ const app = express();
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
 
-
 app.post('/interactions', function (req, res) {
   // Interaction type and data
   const { type, data } = req.body;

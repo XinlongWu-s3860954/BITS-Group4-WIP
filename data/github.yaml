@@ -6,10 +6,10 @@
             "authentication","configure","passport","ignore","continue"]
   answer: ["Answer of Question"]
   link: "www.google.com"
-  
+
 - key_words: ["con'","login","github"]
   answer: ["cuz it is shut down"]
-  link: "www.google.com"
+  link: "www.google.com" 
   
 # how can I set up SSH key passphrases
 - key_words: ["SSH key passphrases","set","ssh key passphrases"]
