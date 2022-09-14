@@ -99,8 +99,8 @@
   link: "https://docs.github.com/en/get-started/using-github/github-mobile"
 
 - key_words: ["install github mobile", "how to install github mobile"]
-  answer: ["How to setup git?",
-           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
-           "2) Set your username in Git.",
-           "3) Set your commit email address in Git."]
-  link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+  answer: ["How to Install GitHub Mobile",
+           "Download and install the latest version of Git from respective app store",
+           "Android phones: Google Play Store",
+           "iOS phone: App Store"]
+  link: "https://github.com/mobile"
