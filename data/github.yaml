@@ -86,7 +86,21 @@
 
 - key_words: ["what is github mobile", "github mobile", "github on mobile"]
   answer: ["**About GitHub Mobile:**",
-           "GitHub Mobile is available as an Android and iOS app.\n",
-           "• Windows 7 64-bit or later",
-           "    ○ You must have a 64-bit operating system to run GitHub Desktop."]
+           "GitHub Mobile is available as an Android and iOS app\n",
+           "GitHub Mobile gives you a way to do high-impact work on GitHub quickly and from anywhere. GitHub Mobile is a safe and secure way to access your GitHub data through a trusted, first-party client application.\n",
+           "With GitHub Mobile you can:",
+           "• Manage, triage, and clear notifications",
+           "• Read, review, and collaborate on issues and pull requests",
+           "• Edit files in pull requests",
+           "• Search for, browse, and interact with users, repositories, and organizations",
+           "• Receive a push notification when someone mentions your username",
+           "• Secure your GitHub.com account with two-factor authentication",
+           "• Verify your sign in attempts on unrecognized devices"]
+  link: "https://docs.github.com/en/get-started/using-github/github-mobile"
+
+- key_words: ["install github mobile", "how to install github mobile"]
+  answer: ["How to setup git?",
+           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
+           "2) Set your username in Git.",
+           "3) Set your commit email address in Git."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
