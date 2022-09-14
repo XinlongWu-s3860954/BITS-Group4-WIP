@@ -62,6 +62,7 @@ function githubHandler(res, req, data) {
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
+      // added \n and a space bar for better visuals. -Kayla on 14 Sept
       content: ans == null ? "Sorry, I can't help you now ;(" : toString(ans.answer) + " \n\n For more information, see: " + ans.link,
     },
   });
