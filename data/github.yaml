@@ -67,8 +67,7 @@
            "5) Select Initialize this repository with a README.",
            "6) Click Create repository.",
            "",
-           "Congratulations! You've successfully created your first repository, and initialized it with a README file.",
-           ""]
+           "Congratulations! You've successfully created your first repository, and initialized it with a README file.",]
   link: "https://docs.github.com/en/get-started/quickstart/create-a-repo"
 
 - key_words: ["setup git", "git setup", "how to setup git"]
@@ -76,4 +75,18 @@
            "1) Download and install the latest version of Git at https://git-scm.com/downloads",
            "2) Set your username in Git.",
            "3) Set your commit email address in Git."]
+  link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+
+- key_words: ["github desktop supporting OS", "github desktop supporting operating system"]
+  answer: ["The following operating systems are supported for GitHub Desktop:",
+           "• macOS 10.12 or later",
+           "• Windows 7 64-bit or later",
+           "    ○ You must have a 64-bit operating system to run GitHub Desktop."]
+  link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+
+- key_words: ["what is github mobile", "github mobile", "github on mobile"]
+  answer: ["**About GitHub Mobile:**",
+           "GitHub Mobile is available as an Android and iOS app.\n",
+           "• Windows 7 64-bit or later",
+           "    ○ You must have a 64-bit operating system to run GitHub Desktop."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
