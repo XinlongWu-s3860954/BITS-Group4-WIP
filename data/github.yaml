@@ -55,10 +55,26 @@
   answer: ["Visit https://github.com/join to sign up for GitHub!"]
   link: [""]
 
-- key_words: ["create repository", "setup repository", "how to setup repository"]
+- key_words: ["create repository", "setup repository", "how to setup repository", "create repositories", "setup repositories", "how to setup repositories", "how to create repositories"]
   answer: ["How to Create a Repository:",
            "1) In the upper-right corner of any page, use the  drop-down menu, and select New repository.",
-           "2) Type a short, memorable name for your repository. For example, "hello-world".",
-           "3) Optionally, add a description of your repository. For example, \"My first repository on GitHub."\"
-           "4) Choose a repository visibility. For more information, see https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility"]
+           "2) Type a short, memorable name for your repository. For example, \"hello-world\".",
+           "3) Optionally, add a description of your repository. For example, \"My first repository on GitHub.\"",
+           "4) Choose a repository visibility. For more information, see [\"About Repositories\"](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility)",
+           "5) Select Initialize this repository with a README.",
+           "6) Click Create repository.",
+           "",
+           "Congratulations! You've successfully created your first repository, and initialized it with a README file.",
+           ""]
+  link: "https://docs.github.com/en/get-started/quickstart/create-a-repo"
+
+- key_words: ["setup git", "git setup", "how to setup git"]
+  answer: ["How to setup git?",
+           "1) Download and install the latest version of Git at https://git-scm.com/downloads",
+           "2) Set your username in Git.",
+           "3) Set your commit email address in Git."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
+
+- key_words: ["join github","apply github","sign up for github"]
+  answer: ["Visit https://github.com/join to sign up for GitHub!"]
+  link: [""]
