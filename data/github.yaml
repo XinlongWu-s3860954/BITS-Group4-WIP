@@ -77,13 +77,6 @@
            "3) Set your commit email address in Git."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
 
-- key_words: ["github desktop supporting OS", "github desktop supporting operating system"]
-  answer: ["The following operating systems are supported for GitHub Desktop:",
-           "• macOS 10.12 or later",
-           "• Windows 7 64-bit or later",
-           "    ○ You must have a 64-bit operating system to run GitHub Desktop."]
-  link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
-
 - key_words: ["what is github mobile", "github mobile", "github on mobile"]
   answer: ["**About GitHub Mobile:**",
            "GitHub Mobile is available as an Android and iOS app\n",
@@ -99,8 +92,16 @@
   link: "https://docs.github.com/en/get-started/using-github/github-mobile"
 
 - key_words: ["install github mobile", "how to install github mobile"]
-  answer: ["How to Install GitHub Mobile",
+  answer: ["How to Install GitHub Mobile:",
            "Download and install the latest version of Git from respective app store",
-           "Android phones: Google Play Store",
-           "iOS phone: App Store"]
+           "  Android phones: Google Play Store",
+           "  iOS phone: App Store"]
   link: "https://github.com/mobile"
+
+- key_words: ["github desktop supporting os", "github desktop supporting operating system", "github desktop supporting OS"]
+  answer: ["The following operating systems are supported for GitHub Desktop:",
+           "• macOS 10.12 or later",
+           "• Windows 7 64-bit or later",
+           "    ○ You must have a 64-bit operating system to run GitHub Desktop"]
+  link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/supported-operating-systems"
+
