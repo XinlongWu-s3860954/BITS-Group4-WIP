@@ -62,7 +62,7 @@ function githubHandler(res, req, data) {
   res.send({
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
-      content: ans == null ? "Sorry, I can't help you now ;(" : toString(ans.answer) + " \n For more information, see:" + ans.link,
+      content: ans == null ? "Sorry, I can't help you now ;(" : toString(ans.answer) + " \n For more information, see: " + ans.link,
     },
   });
 }
