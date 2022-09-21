@@ -63,7 +63,7 @@ function githubHandler(res, req, data) {
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
       // added \n and a space bar for better visuals. -Kayla on 14 Sept
-      content: ans == null ? "Sorry, I'm unable to answer your query :( \n Would you like to log a ticket to GitHub Support directly? \n If so, you may log a ticket at https://support.github.com/contact" : toString(ans.answer) + " \n\n For more information, see: " + ans.link,
+      content: ans == null ? "Sorry, I'm unable to answer your query :( \n Would you like to log a ticket to GitHub Support directly? \n If so, you may log a ticket at https://support.github.com/contact" : toString(ans.answer) ans.link ? "" : (" \n\n For more information, see: " + ans.link),
     },
   });
 }
