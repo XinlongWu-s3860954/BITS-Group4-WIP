@@ -106,8 +106,6 @@
   link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/supported-operating-systems"
 
 - key_words: ["github support", "GitHub support"]
-  answer: ["If you wish to log a support ticket with GitHub Support directly",
-           "Please log a ticket",
-           "• Windows 7 64-bit or later",
-           "    ○ You must have a 64-bit operating system to run GitHub Desktop"]
+  answer: ["If you wish to log a support ticket with GitHub Support directly, please log a ticket using the GitHub Support page",
+           "Alternively, you can post your question on [GitHub discussion forums](https://github.com/orgs/community/discussions/)"]
   link: "https://support.github.com/contact"
