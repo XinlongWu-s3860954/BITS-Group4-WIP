@@ -58,7 +58,7 @@
   link: ["https://docs.github.com/en/get-started/signing-up-for-github"]
 
 - key_words: ["create repository", "setup repository", "how to setup repository", "create repositories", "setup repositories", "how to setup repositories", "how to create repositories"]
-  answer: ["How to Create a Repository:",
+  answer: ["**How to Create a Repository:**",
            "1) In the upper-right corner of any page, use the  drop-down menu, and select New repository.",
            "2) Type a short, memorable name for your repository. For example, \"hello-world\".",
            "3) Optionally, add a description of your repository. For example, \"My first repository on GitHub.\"",
@@ -70,7 +70,7 @@
   link: "https://docs.github.com/en/get-started/quickstart/create-a-repo"
 
 - key_words: ["setup git", "git setup", "how to setup git"]
-  answer: ["How to setup git?",
+  answer: ["**How to setup git?**",
            "1) Download and install the latest version of Git at https://git-scm.com/downloads",
            "2) Set your username in Git.",
            "3) Set your commit email address in Git."]
@@ -91,10 +91,10 @@
   link: "https://docs.github.com/en/get-started/using-github/github-mobile"
 
 - key_words: ["install github mobile", "how to install github mobile"]
-  answer: ["How to Install GitHub Mobile:",
+  answer: ["**How to Install GitHub Mobile:**",
            "Download and install the latest version of Git from respective app store",
-           "  Android phones: Google Play Store",
-           "  iOS phone: App Store"]
+           "      → Android phones: [Google Play Store](https://play.google.com/store/apps/details?id=com.github.android)",
+           "      → iOS phone: [App Store](https://apps.apple.com/app/github/id1477376905?ls=1)"]
   link: "https://github.com/mobile"
 
 - key_words: ["github desktop supporting os", "github desktop supporting operating system", "github desktop supporting OS"]
