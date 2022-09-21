@@ -34,8 +34,7 @@
   answer: ["How to Install GitHub Desktop?",
            "1) Navigate to https://desktop.github.com/",
            "2) Download the appropriate version of GitHub Desktop for your operating system.",
-           "3) Follow the prompts to complete the installation.",
-           ""]
+           "3) Follow the prompts to complete the installation."]
   link: "https://docs.github.com/en/desktop/installing-and-configuring-github-desktop"
   
 - key_words: ["setup github","github helloworld","how to setup github"]
@@ -54,7 +53,7 @@
            "3) Set your commit email address in Git."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
 
-- key_words: ["join github","apply github","sign up for github"]
+- key_words: ["join github","apply github","sign up for github","sign up github","signup github","sign","github"]
   answer: ["Visit https://github.com/join to sign up for GitHub!"]
   link: ["https://docs.github.com/en/get-started/signing-up-for-github"]
 
