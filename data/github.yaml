@@ -106,3 +106,8 @@
 - key_words: ["github support", "GitHub support"]
   answer: ["If you wish to log a support ticket with GitHub Support directly, please log a ticket using the [GitHub Support page](https://support.github.com/contact)",
            "\nAlternively, you can post your question on [GitHub discussion forums](https://github.com/orgs/community/discussions/)"]
+           
+- key_words: ["regist","github"]
+  answer: ["1. Click on this link: https://github.com/signup",
+           "2. "
+          ]

@@ -66,6 +66,10 @@ function githubHandler(res, req, data) {
       content: ans == null ? "Sorry, I'm unable to answer your query :( \n Would you like to log a ticket to GitHub Support directly? \n If so, you may log a ticket at https://support.github.com/contact" : toString(ans.answer) + (ans.link ? " \n\n For more information, see: " + ans.link: ""),
     },
   });
+  
+  if (ans == null){
+    console.log("[Can't find answer]:" + msg);
+  }
 }
 
 // Simple github command
