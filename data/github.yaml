@@ -53,10 +53,6 @@
            "3) Set your commit email address in Git."]
   link: "https://docs.github.com/en/get-started/quickstart/set-up-git"
 
-- key_words: ["join github","apply github","sign up for github","sign up github","signup github","sign","github"]
-  answer: ["Visit https://github.com/join to sign up for GitHub!"]
-  link: ["https://docs.github.com/en/get-started/signing-up-for-github"]
-
 - key_words: ["create repository", "setup repository", "how to setup repository", "create repositories", "setup repositories", "how to setup repositories", "how to create repositories"]
   answer: ["**How to Create a Repository:**",
            "1) In the upper-right corner of any page, use the  drop-down menu, and select New repository.",
@@ -97,7 +93,8 @@
            "      → iOS phone: [App Store](https://apps.apple.com/app/github/id1477376905?ls=1)"]
 
 - key_words: ["github desktop supporting os", "github desktop supporting operating system", "github desktop supporting OS", "github desktop supported OS", "github desktop support OS"]
-  answer: ["The following operating systems are supported for GitHub Desktop:",
+  answer: ["**Supporting OS for GitHub Desktop**",
+           "The following operating systems are supported for GitHub Desktop:",
            "• macOS 10.12 or later",
            "• Windows 7 64-bit or later",
            "    ○ You must have a 64-bit operating system to run GitHub Desktop"]
@@ -107,9 +104,10 @@
   answer: ["If you wish to log a support ticket with GitHub Support directly, please log a ticket using the [GitHub Support page](https://support.github.com/contact)",
            "\nAlternively, you can post your question on [GitHub discussion forums](https://github.com/orgs/community/discussions/)"]
            
-- key_words: ["regist","github", "regist github account"]
-  answer: ["1. Click on this link: https://github.com/signup",
+- key_words: ["regist","github", "regist github account", "join github","apply github","sign up for github","sign up github","signup github","sign","github"]
+  answer: ["**GitHub Registration**",
+           "1. Click on this link: https://github.com/signup",
            "2. Enter your email address and click Next",
            "3. Set your Password",
-           "4. You are almost done, don't forget verify your email."
+           "4. You are almost done, don't forget verify your email!"
           ]
