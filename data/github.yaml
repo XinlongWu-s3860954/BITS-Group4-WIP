@@ -120,3 +120,13 @@
           "• When were the changes made?",
           "• Why were changes needed?"]
   link: "https://docs.github.com/en/get-started/using-git/about-git"
+
+- key_words: ["what is git push","git push","git", "push commits"]
+  answer: ["**Pushing commits to a remote repository**",
+          "You can use *git push* to push commits made on your local branch to a remote repository.",
+          "\nThe git push command takes two arguments:",
+          "  • A remote name, for example, *origin*",
+          "  • A branch name, for example, *main*",
+          "\nFor example:",
+          "*git push  <REMOTENAME> <BRANCHNAME> *"]
+  link: "https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository"
