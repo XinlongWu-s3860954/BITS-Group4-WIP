@@ -67,7 +67,7 @@ function githubHandler(res, req, data) {
     },
   });
   
-  fs.writeFile('./failure.log',"[Can't find answer]:" + msg + " key words:" + key_words, 
+  fs.appendFile('./failure_log.txt',"[Can't find answer]:" + msg + " key words:" + key_words, 
     // 写入文件后调用的回调函数
     function(err) {  
         if (err) throw err; 
