@@ -67,9 +67,13 @@ function githubHandler(res, req, data) {
     },
   });
   
-  if (ans == null){
-    console.log("[Can't find answer]:" + msg);
-  }
+  fs.writeFile('./failure.log',"[Can't find answer]:" + msg + " key words:" + key_words, 
+    // 写入文件后调用的回调函数
+    function(err) {  
+        if (err) throw err; 
+        // 如果没有错误
+        console.log("[Can't find answer]:" + msg + " key words:" + key_words);
+ });
 }
 
 // Simple github command
