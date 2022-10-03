@@ -56,7 +56,8 @@ app.post("/interactions", async function (req, res) {
 
     COMMANDS_LIST.forEach((command) => {
       if (name === command.name) {
-        command.handler(res, req, data);
+        result = command.handler(data);
+        res.send(result);
       }
     });
   }

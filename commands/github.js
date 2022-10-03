@@ -45,35 +45,35 @@ function findAnswer(key_words){
   return ans;
 }
 
-function githubHandler(res, req, data) {
+function githubHandler(data) {
   if (!data.options) {
-    res.send({
+    return {
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
         content: "Sorry, Did you say anything?",
       },
-    });
-    return
+    };
   }
 
   let msg = data.options[0].value;
   let key_words = rake.generate(msg);
   let ans = findAnswer(key_words);
-  res.send({
+  if(ans == null && !data.test){
+    fs.appendFile('./failure_log.txt',"[Can't find answer]:" + msg + " key words:" + key_words+"\n", 
+        // 写入文件后调用的回调函数
+        function(err) {  
+            if (err) throw err; 
+            // 如果没有错误
+            console.log("[Can't find answer]:" + msg + " key words:" + key_words);
+    });
+  }
+  return {
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
       // added \n and a space bar for better visuals. -Kayla on 14 Sept
       content: ans == null ? "Sorry, I'm unable to answer your query :( \n Would you like to log a ticket to GitHub Support directly? \n If so, you may log a ticket at https://support.github.com/contact" : toString(ans.answer) + (ans.link ? " \n\n For more information, see: " + ans.link: ""),
     },
-  });
-  
-  fs.appendFile('./failure_log.txt',"[Can't find answer]:" + msg + " key words:" + key_words, 
-    // 写入文件后调用的回调函数
-    function(err) {  
-        if (err) throw err; 
-        // 如果没有错误
-        console.log("[Can't find answer]:" + msg + " key words:" + key_words);
- });
+  };
 }
 
 // Simple github command

@@ -1,24 +1,23 @@
 import { InteractionResponseType } from "discord-interactions";
 import rake from "node-rake"
 
-function extractorHandler(res, req, data) {
+function extractorHandler(data) {
   if (!data.options) {
-    res.send({
+    return {
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
         content: "Sorry, Did you say anything?",
       },
-    });
-    return
+    };
   }
 
   let msg = data.options[0].value;
-  res.send({
+  return {
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
       content: "Result: " + rake.generate(msg),
     },
-  });
+  };
 }
 
 // Simple extractor command

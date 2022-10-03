@@ -1,25 +1,24 @@
 import { InteractionResponseType } from "discord-interactions";
 
-function gitHandler(res, req, data) {
+function gitHandler(data) {
   if (!data.options) {
-    res.send({
+    return {
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
         content: "Sorry, Did you say anything?",
       },
-    });
-    return
+    };
   }
 
   // console.log(data);
   let msg = data.options[0].value;
   // console.log(msg)
-  res.send({
+  return {
     type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
     data: {
       content: "GIT you have send msg: " + msg,
     },
-  });
+  };
 }
 
 // Simple git command
